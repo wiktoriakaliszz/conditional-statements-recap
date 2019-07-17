@@ -68,6 +68,32 @@ Everything else is **truthy**. That includes:
 * ``{ }`` (an empty object)
 * ``function(){}`` (an empty function)
 
+## The Ternary Operator
+The conditional (**ternary**) operator is the only JavaScript operator that takes three operands. This operator is frequently used as a shortcut for the `if...else` statement.
+Below example using `if...else` statement ...
+
+```let isNightTime = true;
+
+if (isNightTime) {
+  console.log('Turn on the lights!');
+} else {
+  console.log('Turn off the lights!');
+}
+```
+
+  can be also performed using a ternary operator -
+
+```isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lights!');```
+
+_In the example above:_
+
+The condition, ``isNightTime``, is provided before the ``?``.
+Two expressions follow the ? and are separated by a colon`` :``.
+If the condition evaluates to true, the first expression executes.
+If the condition evaluates to false, the second expression executes.
+
+
+
 
 
 
