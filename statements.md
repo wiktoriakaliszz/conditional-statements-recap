@@ -93,6 +93,23 @@ If the condition evaluates to true, the first expression executes.
 If the condition evaluates to false, the second expression executes.
 
 
+## Else If Statements
+We can add more conditions to our ``if...else`` with an ``else if`` statement. The ``else if`` statement allows for more than two possible outcomes. You can add as many ``else if`` statements as you’d like.
+The ``else if`` statement always comes after the ``if`` statement and before the ``else`` statement and also takes a condition. 
+
+```let stopLight = 'yellow';
+
+if (stopLight === 'red') {
+  console.log('Stop!');
+} else if (stopLight === 'yellow') {
+  console.log('Slow down.');
+} else if (stopLight === 'green') {
+  console.log('Go!');
+} else {
+  console.log('Caution, unknown!');
+}
+```
+``if / else if / else`` statements are read from top to bottom, so the first condition that evaluates to true from the top to bottom is the block that gets executed.
 
 
 
