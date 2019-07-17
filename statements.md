@@ -38,41 +38,43 @@ if (sleepy) {
  [Here is a cool tutorial for y'all](https://youtu.be/N4V0FZASK60)
 
  ## Comparison Operators
-* less than: ``<``
-* greater than: ``>``
-* less than or equal to: ``<=``
-* greater than or equal to: ``>=``
-* is equal to: ``===``
-* is **not** equal to: ``!==``
+* less than: `<`
+* greater than: `>`
+* less than or equal to: `<=`
+* greater than or equal to: `>=`
+* is equal to: `===`
+* is **not** equal to: `!==`
 
 ## Logical Operators
-* the and operator ``&&``
-* the or operator ``||``
-* the not operator, otherwise known as the bang operator ``!``
+* the and operator `&&`
+* the or operator `||`
+* the not operator, otherwise known as the bang operator `!`
 
 ## Truthy vs Falsy
 The following values are **always falsy**:
 
-* ``false``
-* ``0``
-* ``' '`` or ``" "`` (empty string)
-* ``null``
-* ``undefined``
-* ``NaN`` (not a number)
+* `false`
+* `0`
+* `' '` or `" "` (empty string)
+* `null`
+* `undefined`
+* `NaN` (not a number)
 
 Everything else is **truthy**. That includes:
 
-* ``'0'`` (a string containing a single zero)
-* ``'false'`` (a string containing the text “false”)
-* ``[ ]`` (an empty array)
-* ``{ }`` (an empty object)
-* ``function(){}`` (an empty function)
+* `'0'` (a string containing a single zero)
+* `'false'` (a string containing the text “false”)
+* `[ ]` (an empty array)
+* `{ }` (an empty object)
+* `function(){}` (an empty function)
+
+[Another one!](https://youtu.be/dQw4w9WgXcQ)
 
 ## The Ternary Operator
-The conditional (**ternary**) operator is the only JavaScript operator that takes three operands. This operator is frequently used as a shortcut for the `if...else` statement.
-Below example using `if...else` statement ...
+This operator is frequently used as a shortcut for the `if...else` statement.
 
-```let isNightTime = true;
+```js
+let isNightTime = true;
 
 if (isNightTime) {
   console.log('Turn on the lights!');
@@ -80,24 +82,23 @@ if (isNightTime) {
   console.log('Turn off the lights!');
 }
 ```
+Using the ternary operator, we shorten our code into:
 
-  can be also performed using a ternary operator -
+```js
+isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lights!');
+```
 
-```isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lights!');```
-
-_In the example above:_
-
-The condition, ``isNightTime``, is provided before the ``?``.
-Two expressions follow the ? and are separated by a colon`` :``.
-If the condition evaluates to true, the first expression executes.
-If the condition evaluates to false, the second expression executes.
+* the condition (`isNightTime`) is provided before the `?`
+* two expressions follow the `?` and are separated by a colon `:`
 
 
-## Else If Statements
-We can add more conditions to our ``if...else`` with an ``else if`` statement. The ``else if`` statement allows for more than two possible outcomes. You can add as many ``else if`` statements as you’d like.
-The ``else if`` statement always comes after the ``if`` statement and before the ``else`` statement and also takes a condition. 
+## `Else If` Statements
+Want more conditions to your `if...else`? Add as many `else if` statements as you’d like.
 
-```let stopLight = 'yellow';
+The `else if` statement always comes **after** the `if` statement and **before** the `else` statement and also takes a condition. 
+
+```js
+let stopLight = 'yellow';
 
 if (stopLight === 'red') {
   console.log('Stop!');
@@ -109,7 +110,40 @@ if (stopLight === 'red') {
   console.log('Caution, unknown!');
 }
 ```
-``if / else if / else`` statements are read from top to bottom, so the first condition that evaluates to true from the top to bottom is the block that gets executed.
+`if / else if / else` statements are always read from top to bottom!
+
+[Another one!](https://youtu.be/ZPpXJ3dk9gE)
+
+## The `switch` Keyword
+A `switch` statement provides an alternative syntax that is easier to read and write.
+
+```js
+let fromSoft = 'Dark Souls';
+
+switch (fromSoft) {
+  case 'Bloodborne':
+    console.log('This game costs $40');
+    break;
+  case 'Dark Souls':
+    console.log('This game costs $20');
+    break;
+  case 'Dark Souls 2':
+    console.log('This game costs $25');
+    break;
+  default:
+    console.log('Not a FromSoft game');
+    break;
+}
+```
+* multiple `case`s
+* `break` stops the remaining `case`s from being checked
+* at the end always a `default` statement (none of the cases === true, the code in the `default` statement will run)
+
+[The last one (for real)](https://youtu.be/UeXDAu7SdmY)
+
+
+
+
 
 
 
